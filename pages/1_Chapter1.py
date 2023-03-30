@@ -40,8 +40,9 @@ with st.sidebar:
     st.write("Learning Objectives")
     if st.button("Heading, paragraphs, newline and lists"):
             cathy_line = get_response("You are an online JavaScript course. Can you explain details the concepts and give code examples for each of them. The concepts are Heading, paragraphs, newline and lists in HTML")
-            st.markdown(""" :mailbox: Tutor: """ + cathy_line)
-         
+            
+st.markdown(""" :mailbox: Tutor: """ + cathy_line)
+
 # Storing the chat
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
