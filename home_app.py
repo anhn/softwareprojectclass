@@ -5,36 +5,25 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.write("# Welcome to my learning space! 👋")
+st.write("# CS301 - Web Development and HCI 👋")
 
-st.sidebar.success("Select a demo above.")
+st.sidebar.success("Select a lecture above.")
 
 st.markdown(
     """
-    This is the homepage of Web Development and Human Computer Interaction course.  
-    After completing the course, the student must have the following:  
-        Knowledge:   
-         + structure and functioning of the Internet and the World Wide Web  
-         + fundamental knowledge about HTML and CSS style sheets  
-         + fundamental knowledge about Javascript as a programming language  
-         + introduction to a Javascript framework for UI - React  
-         + elements in the web development process  
-        Skill:  
-         + plan, design and develop a responsive website using HTML and CSS  
-         + carry out a usability assessment of websites, based on the guidelines for user-friendly design and universal design  
-         + do basic image processing for the web  
-         + use static analysis to analyze the code quality of a web page  
-         + take into account differences between browsers when developing web pages  
-         + carry out user testing of websites  
-         General:  
-         + have insight into central professional issues related to web development and HCI  
-         + communicate key issues and solution options for websites  
-         + plan and implement projects together with others  
-         + reflect on own professional practice and adjust this under guidance  
-         Learning activities
-         + Watching Lecture videos  
-         + AI-assited self-learning  
-         + Project work: students develop their own websites in a form of project.
-
+    This is the experimental setting for a AI-assited active learning in IT study. The hypothesis was that with a proper use of AI tools, in this case, a GPT-based chatbot, the motivation and learning outcome is improved for students in online setting.
+    We applied this novel concept in teaching our course Web Development and Human Computer Interaction course.  
+    Each student in the class is equipped with a chatbot as their private tutor.  
+    You can use your tutor for:  
+        + Personalized support by answering questions, explanations, and feedback on work  
+        + Give solutions to your difficult work  
+        + Explain and debug your code  
+        + Answering your questions regarding the connection of the study and future career  
+        + Improved learning outcomes  
+        + Facilitation of peer-to-peer learning  
+        + Diagnosis of misunderstandings, targeted instruction  
+        + Support for self-directed learning, resources, and study tips  
+        + Increased your autonomy and ownership of learning  
+    Start by selecting the lecture in the sidebar.
 """
 )
