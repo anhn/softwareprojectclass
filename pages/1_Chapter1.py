@@ -33,8 +33,6 @@ def get_response(jim_line):
     output = completions.choices[0]["message"]["content"].strip()
     return output 
 
-st.title("🏢 Javascript Tutor")
-
 with st.sidebar:
     st.write("Lecture 9 and 10 - Introduction to Javascript")
     st.write("Learning Objectives")
@@ -50,22 +48,22 @@ with st.sidebar:
     """)    
 #    if st.button("Heading, paragraphs, newline and lists"):
 #            cathy_line = get_response("You are an online JavaScript course. Can you explain details the concepts and give code examples for each of them. The concepts are Heading, paragraphs, newline and lists in HTML")
-            
-st.write ("Use the topics in the sidebar to form a prompt. Ask for example. Example of a prompt: 'Tell me variables, datatypes, operators and expression in Javascript. Give code example to illusrate as detailed as possible'.")
-
-# Storing the chat
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
-
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-with st.form("my_form"):
-   jim_line = st.text_area("Write you command here","", height=10, key='option')
-   # Every form must have a submit button.
-   historyIncluded = st.checkbox('Add the last chat to input')
-   submitted = st.form_submit_button("Submit")
-   if submitted:
+tab1, tab2, tab3 = st.tabs(["Theory Space", "Knowledge check Space", "Exercise Space"])
+
+with tab1:
+    st.title("🏢 Theory space")
+    st.write ("Use the topics in the sidebar to form a prompt. Ask for example. Example of a prompt: 'Tell me variables, datatypes, operators and expression in Javascript. Give code example to illusrate as detailed as possible'.")
+    with st.form("my_form"):
+    jim_line = st.text_area("Write you command here","", height=10, key='option')
+    # Every form must have a submit button.
+    historyIncluded = st.checkbox('Add the last chat to input')
+    submitted = st.form_submit_button("Submit")
+    if submitted:
         if jim_line:
             if historyIncluded:
                 jim_line_long = st.session_state["past"][len(st.session_state['past'])-1] + st.session_state["generated"][len(st.session_state['generated'])-1] + jim_line
@@ -74,21 +72,21 @@ with st.form("my_form"):
                 cathy_line = get_response(jim_line)
             st.session_state.past.append(jim_line)
             st.session_state.generated.append(cathy_line)
-    
-#def get_text():
-#    input_text = st.text_area("","", height=10, key='option')
-#    return input_text
-#jim_line = get_text()
-
-#if jim_line:
-#    cathy_line = get_response(jim_line)
-#    st.session_state.past.append(jim_line)
-#    st.session_state.generated.append(cathy_line)
-
-if st.session_state['generated']:  
+    if st.session_state['generated']:  
     for i in range(len(st.session_state['generated'])-1, -1, -1):
         st.markdown(""" :mailbox: Tutor: """ + st.session_state["generated"][i])
         st.markdown(""" :mailbox: You: """ + st.session_state['past'][i])
+
+
+with tab2:
+  st.title("🏢 Check your knowledge")
+
+
+with tab3:
+  st.title("🏢 Exercise space")
+
+    
+    
            
 #with st.expander("Not sure what to say to Hannah?"):
 #    st.markdown(""" 
