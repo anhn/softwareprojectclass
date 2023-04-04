@@ -36,7 +36,8 @@ def get_response(jim_line):
 with st.sidebar:
     st.write("Lecture 9 and 10 - Introduction to Javascript")
     st.write("Learning Objectives")
-    st.markdown(""" + History of JavaScript   
+    st.markdown(""" 
+                    + History of JavaScript  
                     + Variables, data types, operators, and expressions  
                     + Define and call functions in JavaScript  
                     + Control structures: If statements, loops, and switch statements  
@@ -77,22 +78,57 @@ with tab1:
             st.markdown(""" :mailbox: You: """ + st.session_state['past'][i])
 
 with tab2:
-  st.title("🏢 Check your knowledge")
+    st.title("🏢 Check your knowledge")
+    st.markdown("""
+    The list of questions extracted from job interviews about Javascript programming knowledge:  
+        1. List all primitive data types in Javascript  
+        2. What is the difference between let, const, and var in JavaScript?  
+        3. How do you declare a function in JavaScript?  
+        4. What are different between arrays in javascript and array in java?  
+        5. What is an object in JavaScript?  
+        6. How do you create an object in JavaScript?  
+        7. What are the difference between While... and Do... While loop?  
+        8. What is DOM manipulation in JavaScript?  
+        9. How do you select an element from the DOM using JavaScript?  
+        10. How do you select an element from the DOM using JavaScript jQuery?  
+        11. How do you add or remove an event listener in Javascript?  
+        12. How do you dispatch an event in JavaScript?  
+        13. How do you use event delegation in JavaScript to handle events for multiple elements?  
+        14. In JavaScript what is an argument object?  
+        15. Which company developed JavaScript?  
+        16. What are undeclared and undefined variables?  
+        17. Which symbol is used for comments in Javascript?  
+        18. What is === operator?  
+        19. How can the style/class of an element be changed?  
+        20. How to read and write a file using JavaScript?  
+        21. What would be the result of 3+2+”7″?  
+        22. What do you mean by NULL in Javascript?  
+        23. What are JavaScript Cookies?  
+        24. What are the different types of errors in JavaScript?  
+        25. What is the difference between JavaScript and Jscript?  
+        26. What is the ‘Strict Mode in JavaScript, and how can it be enabled?  
+        27. How to create an anonymous function in JavaScript?  
+        28. Is JavaScript case sensitive?  
+        29. What are some important JavaScript Unit Testing Frameworks?  
+        30. What is OOPS Concept in JavaScript?
+
+    """)
 
 
 with tab3:
     st.title("🏢 Exercise space")
     st.markdown("""
         1. Create a function that takes two numbers as parameters and returns their sum.  
-        2. Write a function that takes a string as input and returns the reverse of the string.  
-        3. Write a program that generates a random number between 1 and 100 and asks the user to guess the number. The program should provide feedback to the user (e.g. 'Too high' or 'Too low') until the correct number is guessed.
-        4. Write a function that takes an array of numbers as input and returns the sum of all the numbers in the array.  
-        5. Create a program that generates a random password that includes both letters and numbers. The length of the password should be configurable.  
-        6. Write a function that takes an array of strings as input and returns the longest string in the array.  
-        7. Create a simple calculator that takes two numbers and an operator (+, -, *, /) as input and returns the result of the calculation.  
-        8.  Write a program that prints the first 20 Fibonacci numbers.  
-        9.  Create a program that takes a temperature in Celsius as input and converts it to Fahrenheit.  
-        10. Write a function that takes a number as input and returns true if the number is prime, false otherwise.  
+        2. Write a program that generates a random number between 1 and 100 and asks the user to guess the number. The program should provide feedback to the user (e.g. 'Too high' or 'Too low') until the correct number is guessed.
+        3. Write a function that takes an array of numbers as input and returns the sum of all the numbers in the array.  
+        4. Write a program that asks the user to enter a number and then checks if the number is even or odd. The program should print "even" or "odd" to the console.  
+        5. Write a function that takes a string as input and returns true if the string is a palindrome (i.e. reads the same backward as forward), false otherwise.  
+        6. Create a program that takes a temperature in Celsius as input and converts it to Fahrenheit.  
+        7. Write a program that changes the background color of the <body> element when a button is clicked.  
+        8. Write a program that creates a form with two input fields (one for the name and one for the email address) and a submit button. When the user submits the form, create a new <div> element with the user's name and email address and append it to the <body> element.  
+        9. Create a program that hides a <div> element when a button is clicked using jQuery.  
+        10. Write a program that changes the color of a <div> element when the mouse hovers over it.  
+
     """)
 
 
