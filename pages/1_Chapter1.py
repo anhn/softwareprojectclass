@@ -36,7 +36,7 @@ def get_response(jim_line):
 st.title("🏢 Javascript Tutor")
 
 with st.sidebar:
-    st.write("Chapter 1 - Introduction to HTML")
+    st.write("Lecture 9 and 10 - Introduction to Javascript")
     st.write("Learning Objectives")
     st.markdown(""" + History of JavaScript   
                     + Variables, data types, operators, and expressions  
