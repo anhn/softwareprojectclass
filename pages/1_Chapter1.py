@@ -67,8 +67,8 @@ with tab1:
                 if historyIncluded:
                     jim_line_long = st.session_state["past"][len(st.session_state['past'])-1] + st.session_state["generated"][len(st.session_state['generated'])-1] + jim_line
                     cathy_line = get_response(jim_line_long)
-                    else:
-                        cathy_line = get_response(jim_line)
+                else:
+                    cathy_line = get_response(jim_line)
                 st.session_state.past.append(jim_line)
                 st.session_state.generated.append(cathy_line)
     if st.session_state['generated']:  
