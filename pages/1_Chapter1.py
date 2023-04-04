@@ -38,10 +38,20 @@ st.title("🏢 Javascript Tutor")
 with st.sidebar:
     st.write("Chapter 1 - Introduction to HTML")
     st.write("Learning Objectives")
-    if st.button("Heading, paragraphs, newline and lists"):
-            cathy_line = get_response("You are an online JavaScript course. Can you explain details the concepts and give code examples for each of them. The concepts are Heading, paragraphs, newline and lists in HTML")
+    st.markdown(""" + History of JavaScript   
+                    + Variables, data types, operators, and expressions  
+                    + Define and call functions in JavaScript  
+                    + Control structures: If statements, loops, and switch statements  
+                    + Arrays: Creation, manipulation, and iteration of arrays  
+                    + Objects: object properties, and methods  
+                    + Document Object Model (DOM): Accessing and manipulating HTML elements  
+                    + jQuery: easier for DOM manipulation and event handling
+                    + Events: Responding to user actions with event listeners  
+    """)    
+#    if st.button("Heading, paragraphs, newline and lists"):
+#            cathy_line = get_response("You are an online JavaScript course. Can you explain details the concepts and give code examples for each of them. The concepts are Heading, paragraphs, newline and lists in HTML")
             
-st.markdown(""" :mailbox: Tutor: """ + cathy_line)
+st.write ("Use the topics in the sidebar to form a prompt. Ask for example. Example of a prompt: 'Tell me variables, datatypes, operators and expression in Javascript. Give code example to illusrate as detailed as possible'.")
 
 # Storing the chat
 if 'generated' not in st.session_state:
