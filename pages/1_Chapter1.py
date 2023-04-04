@@ -54,11 +54,15 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-tab1, tab2, tab3 = st.tabs(["Theory Space", "Knowledge check Space", "Exercise Space"])
+tab1, tab2, tab3 = st.tabs(["Theory Space", "Job Interview Questions", "Exercise Space"])
 
 with tab1:
     st.title("🏢 Theory space")
-    st.write ("Use the topics in the sidebar to form a prompt. Ask for example. Example of a prompt: 'Tell me variables, datatypes, operators and expression in Javascript. Give code example to illusrate as detailed as possible'.")
+    st.markdown ("""
+        Explore each of the learning topics (in the sidebar) with your tutor.  
+        Ask for explanation and examples by input a prompt. Example of a prompt: 'Explain to me variables, datatypes, operators and expression in Javascript. Give code example to illusrate as detailed as possible'.  
+        If you have other questions, please type  <a href="https://www.menti.com/aljeqx5dziyr"> your question here</a>   
+    """, unsafe_allow_html=True)
     with st.form("my_form"):
         jim_line = st.text_area("Write you command here","", height=10, key='option')
         historyIncluded = st.checkbox('Add the last chat to input')
@@ -80,7 +84,8 @@ with tab1:
 with tab2:
     st.title("🏢 Check your knowledge")
     st.markdown("""
-    The list of questions extracted from job interviews about Javascript programming knowledge:  
+    Preparing for a JavaScript interview involves researching less familiar topics with a solution-oriented approach. But before that, you need to know very well the fundamentals.  
+    Below is the list of questions extracted from job interviews about Javascript programming knowledge:  
         1. List all primitive data types in Javascript  
         2. What is the difference between let, const, and var in JavaScript?  
         3. How do you declare a function in JavaScript?  
@@ -117,6 +122,10 @@ with tab2:
 
 with tab3:
     st.title("🏢 Exercise space")
+    st.markdown ("""
+        Implement the following exercise with <a href="https://codepen.io/pen/"> Codepen</a>. You will be asked to share your code later.  
+        If you find it difficult, come back to the Theory space and ask the tutor for answer to the exercise with explanation.
+    """, unsafe_allow_html=True)
     st.markdown("""
         1. Create a function that takes two numbers as parameters and returns their sum.  
         2. Write a program that generates a random number between 1 and 100 and asks the user to guess the number. The program should provide feedback to the user (e.g. 'Too high' or 'Too low') until the correct number is guessed.
