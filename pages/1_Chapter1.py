@@ -48,7 +48,7 @@ with st.sidebar:
                     + Events: Responding to user actions with event listeners  
     """)    
 #    if st.button("Heading, paragraphs, newline and lists"):
-#            cathy_line = get_response("You are an online JavaScript course. Can you explain details the concepts and give code examples for each of them. The concepts are Heading, paragraphs, newline and lists in HTML")
+#            cathy_line = get_response("You are an online JavaScript course. Can you explain details the concepts and give code examples for each of them.")
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
 if 'past' not in st.session_state:
@@ -78,15 +78,15 @@ with tab1:
                 st.session_state.generated.append(cathy_line)
     if st.session_state['generated']:  
         for i in range(len(st.session_state['generated'])-1, -1, -1):
-            st.markdown(""" :mailbox: Tutor: """ + st.session_state["generated"][i])
-            st.markdown(""" :mailbox: You: """ + st.session_state['past'][i])
+            st.markdown(""" :mailbox: :red[Tutor:] """ + st.session_state["generated"][i])
+            st.markdown(""" :mailbox: :blue[You:] """ + st.session_state['past'][i])
 
 with tab2:
     st.title("🏢 Check your knowledge")
     st.markdown("""
     Preparing for a JavaScript interview involves researching less familiar topics with a solution-oriented approach. But before that, you need to know very well the fundamentals.  
     Below is the list of questions extracted from job interviews about Javascript programming knowledge:  
-        1. List all primitive data types in Javascript  
+        :violet[1. List all primitive data types in Javascript  
         2. What is the difference between let, const, and var in JavaScript?  
         3. How do you declare a function in JavaScript?  
         4. What are different between arrays in javascript and array in java?  
@@ -115,7 +115,7 @@ with tab2:
         27. How to create an anonymous function in JavaScript?  
         28. Is JavaScript case sensitive?  
         29. What are some important JavaScript Unit Testing Frameworks?  
-        30. What is OOPS Concept in JavaScript?
+        30. What is OOPS Concept in JavaScript?]
 
     """)
 
