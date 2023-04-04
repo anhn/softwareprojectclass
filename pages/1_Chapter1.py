@@ -59,24 +59,22 @@ with tab1:
     st.title("🏢 Theory space")
     st.write ("Use the topics in the sidebar to form a prompt. Ask for example. Example of a prompt: 'Tell me variables, datatypes, operators and expression in Javascript. Give code example to illusrate as detailed as possible'.")
     with st.form("my_form"):
-    jim_line = st.text_area("Write you command here","", height=10, key='option')
-    # Every form must have a submit button.
-    historyIncluded = st.checkbox('Add the last chat to input')
-    submitted = st.form_submit_button("Submit")
-    if submitted:
-        if jim_line:
-            if historyIncluded:
-                jim_line_long = st.session_state["past"][len(st.session_state['past'])-1] + st.session_state["generated"][len(st.session_state['generated'])-1] + jim_line
-                cathy_line = get_response(jim_line_long)
-            else:
-                cathy_line = get_response(jim_line)
-            st.session_state.past.append(jim_line)
-            st.session_state.generated.append(cathy_line)
+        jim_line = st.text_area("Write you command here","", height=10, key='option')
+        historyIncluded = st.checkbox('Add the last chat to input')
+        submitted = st.form_submit_button("Submit")
+        if submitted:
+            if jim_line:
+                if historyIncluded:
+                    jim_line_long = st.session_state["past"][len(st.session_state['past'])-1] + st.session_state["generated"][len(st.session_state['generated'])-1] + jim_line
+                    cathy_line = get_response(jim_line_long)
+                    else:
+                        cathy_line = get_response(jim_line)
+                st.session_state.past.append(jim_line)
+                st.session_state.generated.append(cathy_line)
     if st.session_state['generated']:  
-    for i in range(len(st.session_state['generated'])-1, -1, -1):
-        st.markdown(""" :mailbox: Tutor: """ + st.session_state["generated"][i])
-        st.markdown(""" :mailbox: You: """ + st.session_state['past'][i])
-
+        for i in range(len(st.session_state['generated'])-1, -1, -1):
+            st.markdown(""" :mailbox: Tutor: """ + st.session_state["generated"][i])
+            st.markdown(""" :mailbox: You: """ + st.session_state['past'][i])
 
 with tab2:
   st.title("🏢 Check your knowledge")
