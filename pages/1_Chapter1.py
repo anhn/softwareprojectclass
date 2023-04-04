@@ -81,7 +81,23 @@ with tab2:
 
 
 with tab3:
-  st.title("🏢 Exercise space")
+    st.title("🏢 Exercise space")
+    st.markdown("""
+        1. Create a function that takes two numbers as parameters and returns their sum.  
+        2. Write a function that takes a string as input and returns the reverse of the string.  
+        3. Write a program that generates a random number between 1 and 100 and asks the user to guess the number. The program should provide feedback to the user (e.g. 'Too high' or 'Too low') until the correct number is guessed.
+        4. Write a function that takes an array of numbers as input and returns the sum of all the numbers in the array.  
+        5. Create a program that generates a random password that includes both letters and numbers. The length of the password should be configurable.  
+        6. Write a function that takes an array of strings as input and returns the longest string in the array.  
+        7. Create a simple calculator that takes two numbers and an operator (+, -, *, /) as input and returns the result of the calculation.  
+        8.  Write a program that prints the first 20 Fibonacci numbers.  
+        9.  Create a program that takes a temperature in Celsius as input and converts it to Fahrenheit.  
+        10. Write a function that takes a number as input and returns true if the number is prime, false otherwise.  
+    """)
+
+
+
+  
 
     
     
