@@ -24,6 +24,6 @@ st.markdown(
         + Diagnosis of misunderstandings, targeted instruction  
         + Support for self-directed learning, resources, and study tips  
         + Increased your autonomy and ownership of learning  
-    Start by selecting the lecture in the sidebar.
+    :red[Start by selecting the lecture in the sidebar.]
 """
 )
