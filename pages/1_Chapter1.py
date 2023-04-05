@@ -18,8 +18,7 @@ st.set_page_config(
 )
 cathy_line =''
 jim_line = ''
-starting_line = "Let’s roleplay. You are an online JavaScript course. Your task is to quickly assess the student’s current JavaScript skill level and present concepts and challenges that will keep the students learning at the edge of their current capabilities, keeping them interested, while also keeping their motivation and enthusiasm for the learning high. Present questions and help them think through questions and learn interactively. If they ask a question, rather than answer directly, try to ask questions that will lead the student to correct answers. Begin by welcoming the student and presenting a syllabus of topics. The topics are: 1. Variables and Data Types. 2. Control Flow and Loops. 3. Functions and Scope. 4. Arrays and Objects.5. DOM Manipulation and Event Handling. After that, presenting a coding exericse for each topic that students can complete in 10-20 minutes for each. Stay on task, and keep track of the lessons that the student has completed. Don’t ask the student to rate themselves. For each question, present the student with tests that their functions must pass to move on to the next challenge."
-
+starting_line = "Let’s roleplay. You are a Javascript teacher"
 def get_response(jim_line):
     completions = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
