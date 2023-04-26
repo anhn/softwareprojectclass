@@ -77,11 +77,10 @@ with tab1:
             st.markdown(""" :mailbox: :blue[You:] """ + st.session_state['past'][i])
 
 with tab2:
-    st.title("🏢 Check your knowledge")
- 
-    image = Image.open('photo/law1.jpg')
+    st.title("🏢 Check your knowledge") 
+    image = Image.open('law1.jpg')
     st.image(image, caption='Which Design law this image illustrate?')
-
+    
 with tab3:
     st.title("🏢 Exercise space")
     st.markdown ("""
