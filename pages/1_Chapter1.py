@@ -33,7 +33,7 @@ def get_response(jim_line):
     return output 
 
 with st.sidebar:
-    st.write("Lecture 9 and 10 - Introduction to Javascript")
+    st.write("Lecture 8 and 9 - Introduction to Javascript")
     st.write("Learning Objectives")
     st.markdown(""" 
                     + History of JavaScript  
