@@ -119,6 +119,7 @@ with tab3:
     """, unsafe_allow_html=True)
     st.markdown("""
         1. Open the website vnexpress.net. Evaluate the website and identify as many design laws as possible.  
+        2. Open the website https://nymag.com/ . Use the tool here https://wave.webaim.org/ to evaluate and identify accessibility errors of the web
 
     """)
 
