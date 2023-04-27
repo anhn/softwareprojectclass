@@ -78,7 +78,7 @@ with tab1:
 
 with tab2:
     st.title("🏢 Check your knowledge") 
-    image = Image.open('photo/law1.jpg')
+    image = Image.open("law1.jpg")
     st.image(image, caption='Which Design law this image illustrate?')
     image = Image.open('photo/law2.jpg')
     st.image(image, caption='Which Design law this image illustrate?')
