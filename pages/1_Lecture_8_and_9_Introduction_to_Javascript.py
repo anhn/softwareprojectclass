@@ -33,7 +33,7 @@ def get_response(jim_line):
     return output 
 
 with st.sidebar:
-    st.write("Lecture 8 and 9 - Introduction to Javascript")
+    st.write("Lecture 9 - Introduction to Javascript")
     st.write("Learning Objectives")
     st.markdown(""" 
                     + History of JavaScript  
@@ -53,7 +53,7 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-tab1, tab2, tab3 = st.tabs(["Theory Space", "Job Interview Questions", "Exercise Space"])
+tab1, tab2, tab3 = st.tabs(["Theory Space", "Exercise Space"])
 
 with tab1:
     st.title("🏢 Theory space")
@@ -89,61 +89,58 @@ with tab2:
         2. What is the difference between let, const, and var in JavaScript?  
         3. How do you declare a function in JavaScript?  
         4. What are different between arrays in javascript and array in java?  
-        5. What is an object in JavaScript?  
-        6. How do you create an object in JavaScript?  
-        7. What are the difference between While... and Do... While loop?  
-        8. What is DOM manipulation in JavaScript?  
-        9. How do you select an element from the DOM using JavaScript?  
-        10. How do you select an element from the DOM using JavaScript jQuery?  
-        11. How do you add or remove an event listener in Javascript?  
-        12. How do you dispatch an event in JavaScript?  
-        13. How do you use event delegation in JavaScript to handle events for multiple elements?  
-        14. In JavaScript what is an argument object?  
-        15. Which company developed JavaScript?  
-        16. What are undeclared and undefined variables?  
-        17. Which symbol is used for comments in Javascript?  
-        18. What is === operator?  
-        19. How can the style/class of an element be changed?  
-        20. How to read and write a file using JavaScript?  
-        21. What would be the result of 3+2+”7″?  
-        22. What do you mean by NULL in Javascript?  
-        23. What are JavaScript Cookies?  
-        24. What are the different types of errors in JavaScript?  
-        25. What is the difference between JavaScript and Jscript?  
-        26. What is the ‘Strict Mode in JavaScript, and how can it be enabled?  
-        27. How to create an anonymous function in JavaScript?  
-        28. Is JavaScript case sensitive?  
-        29. What are some important JavaScript Unit Testing Frameworks?  
-        30. What is OOPS Concept in JavaScript?]
+#        5. What is an object in JavaScript?  
+        5. How do you create an object in JavaScript?  
+#        6. What are the difference between While... and Do... While loop?  
+        6. What is DOM manipulation in JavaScript?  
+#        9. How do you select an element from the DOM using JavaScript?  
+#        10. How do you select an element from the DOM using JavaScript jQuery?  
+#        11. How do you add or remove an event listener in Javascript?  
+#        12. How do you dispatch an event in JavaScript?  
+#        13. How do you use event delegation in JavaScript to handle events for multiple elements?  
+#        14. In JavaScript what is an argument object?  
+        7. Which company developed JavaScript?  
+#        16. What are undeclared and undefined variables?  
+#        17. Which symbol is used for comments in Javascript?  
+        8. What is === operator?  
+#        19. How can the style/class of an element be changed?  
+#        20. How to read and write a file using JavaScript?  
+#        21. What would be the result of 3+2+”7″?  
+#        22. What do you mean by NULL in Javascript?  
+#        23. What are JavaScript Cookies?  
+#        24. What are the different types of errors in JavaScript?  
+#        25. What is the difference between JavaScript and Jscript?  
+#        26. What is the ‘Strict Mode in JavaScript, and how can it be enabled?  
+#        27. How to create an anonymous function in JavaScript?  
+#        28. Is JavaScript case sensitive?  
+#        29. What are some important JavaScript Unit Testing Frameworks?  
+#        30. What is OOPS Concept in JavaScript?]
+#        9. Create a function that takes two numbers as parameters and returns their sum.  
+#        10. Write a program that generates a random number between 1 and 100 and asks the user to guess the number. The program should provide feedback to the user (e.g. 'Too high' or 'Too low') until the correct number is guessed.
 
     """)
 
 
-with tab3:
-    st.title("🏢 Exercise space")
-    st.markdown ("""
-        Implement the following exercise with <a href="https://codepen.io/pen/"> Codepen</a>. You will be asked to share your code later.  
-        If you find it difficult, come back to the Theory space and ask the tutor for answer to the exercise with explanation.
-    """, unsafe_allow_html=True)
-    st.markdown("""
-        1. Create a function that takes two numbers as parameters and returns their sum.  
-        2. Write a program that generates a random number between 1 and 100 and asks the user to guess the number. The program should provide feedback to the user (e.g. 'Too high' or 'Too low') until the correct number is guessed.
-        3. Write a function that takes an array of numbers as input and returns the sum of all the numbers in the array.  
-        4. Write a program that asks the user to enter a number and then checks if the number is even or odd. The program should print "even" or "odd" to the console.  
-        5. Write a function that takes a string as input and returns true if the string is a palindrome (i.e. reads the same backward as forward), false otherwise.  
-        6. Create a program that takes a temperature in Celsius as input and converts it to Fahrenheit.  
-        7. Write a program that changes the background color of the <body> element when a button is clicked.  
-        8. Write a program that creates a form with two input fields (one for the name and one for the email address) and a submit button. When the user submits the form, create a new <div> element with the user's name and email address and append it to the <body> element.  
-        9. Create a program that hides a <div> element when a button is clicked using jQuery.  
-        10. Write a program that changes the color of a <div> element when the mouse hovers over it.  
-
-    """)
-
-
-
+#with tab3:
+#    st.title("🏢 Exercise space")
+#    st.markdown ("""
+#        Implement the following exercise with <a href="https://codepen.io/pen/"> Codepen</a>. You will be asked to share your code later.  
+#        If you find it difficult, come back to the Theory space and ask the tutor for answer to the exercise with explanation.
+#    """, unsafe_allow_html=True)
+#    st.markdown("""
+#        1. Create a function that takes two numbers as parameters and returns their sum.  
+#        2. Write a program that generates a random number between 1 and 100 and asks the user to guess the number. The program should provide feedback to the user (e.g. 'Too high' or 'Too low') until the correct number is guessed.
+#        3. Write a function that takes an array of numbers as input and returns the sum of all the numbers in the array.  
+#        4. Write a program that asks the user to enter a number and then checks if the number is even or odd. The program should print "even" or "odd" to the console.  
+#        5. Write a function that takes a string as input and returns true if the string is a palindrome (i.e. reads the same backward as forward), false otherwise.  
+#        6. Create a program that takes a temperature in Celsius as input and converts it to Fahrenheit.  
+#        7. Write a program that changes the background color of the <body> element when a button is clicked.  
+#        8. Write a program that creates a form with two input fields (one for the name and one for the email address) and a submit button. When the user submits the form, create a new <div> element with the user's name and email address and append it to the <body> element.  
+#        9. Create a program that hides a <div> element when a button is clicked using jQuery.  
+#        10. Write a program that changes the color of a <div> element when the mouse hovers over it.  
+#
+#    """)
   
-
-    
     
            
 #with st.expander("Not sure what to say to Hannah?"):
