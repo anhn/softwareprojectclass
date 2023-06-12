@@ -53,7 +53,7 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-tab1, tab2, tab3 = st.tabs(["Theory Space", "Exercise Space"])
+tab1, tab2 = st.tabs(["Theory Space", "Exercise Space"])
 
 with tab1:
     st.title("🏢 Theory space")
