@@ -89,20 +89,26 @@ with tab2:
         2. What is the difference between let, const, and var in JavaScript?  
         3. How do you declare a function in JavaScript?  
         4. What are different between arrays in javascript and array in java?  
-#        5. What is an object in JavaScript?  
         5. How do you create an object in JavaScript?  
-#        6. What are the difference between While... and Do... While loop?  
         6. What is DOM manipulation in JavaScript?  
+        7. Which company developed JavaScript?  
+        8. What is === operator?  
+        9. Create a function that takes two numbers as parameters and returns their sum.  
+        10. Write a program that generates a random number between 1 and 100 and asks the user to guess the number. The program should provide feedback to the user (e.g. 'Too high' or 'Too low') until the correct number is guessed.
+    """)
+
+  
+#        5. What is an object in JavaScript?  
+#        6. What are the difference between While... and Do... While loop?  
 #        9. How do you select an element from the DOM using JavaScript?  
 #        10. How do you select an element from the DOM using JavaScript jQuery?  
 #        11. How do you add or remove an event listener in Javascript?  
 #        12. How do you dispatch an event in JavaScript?  
 #        13. How do you use event delegation in JavaScript to handle events for multiple elements?  
 #        14. In JavaScript what is an argument object?  
-        7. Which company developed JavaScript?  
+
 #        16. What are undeclared and undefined variables?  
 #        17. Which symbol is used for comments in Javascript?  
-        8. What is === operator?  
 #        19. How can the style/class of an element be changed?  
 #        20. How to read and write a file using JavaScript?  
 #        21. What would be the result of 3+2+”7″?  
@@ -115,10 +121,6 @@ with tab2:
 #        28. Is JavaScript case sensitive?  
 #        29. What are some important JavaScript Unit Testing Frameworks?  
 #        30. What is OOPS Concept in JavaScript?]
-#        9. Create a function that takes two numbers as parameters and returns their sum.  
-#        10. Write a program that generates a random number between 1 and 100 and asks the user to guess the number. The program should provide feedback to the user (e.g. 'Too high' or 'Too low') until the correct number is guessed.
-
-    """)
 
 
 #with tab3:
