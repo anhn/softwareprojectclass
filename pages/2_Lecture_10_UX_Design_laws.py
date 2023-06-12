@@ -49,7 +49,7 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-tab1, tab2, tab3 = st.tabs(["Theory Space", "Job Interview Questions", "Exercise Space"])
+tab1, tab2 = st.tabs(["Theory Space","Exercise Space"])
 
 with tab1:
     st.title("🏢 Theory space")
@@ -85,43 +85,43 @@ with tab2:
     image = Image.open('photo/law3.jpg')
     st.image(image, width=800,caption='Figure 3 - Which Design law this image illustrate?')
     image = Image.open('photo/law4.jpg')
-    st.image(image, width=800,caption='Figure 4 - Which Design law this image illustrate?')
-    image = Image.open('photo/law5.jpg')
-    st.image(image, width=800,caption='Figure 5 - Which Design law this image illustrate?')
-    image = Image.open('photo/law6.jpg')
-    st.image(image, width=800,caption='Figure 6 - Which Design law this image illustrate?')
-    image = Image.open('photo/law7.jpg')
-    st.image(image, width=800,caption='Figure 7 - Which Design law this image illustrate?')
-    image = Image.open('photo/law8.jpg')
-    st.image(image, width=800,caption='Figure 8 - Which Design law this image illustrate?')
-    image = Image.open('photo/law9.jpg')
-    st.image(image, width=800,caption='Figure 9 - Which Design law this image illustrate?')
-    image = Image.open('photo/law10.jpg')
-    st.image(image, width=800,caption='Figure 10 - Which Design law this image illustrate?')
-    image = Image.open('photo/law11.jpg')
-    st.image(image, width=800,caption='Figure 11 - Which Design law this image illustrate?')
-    image = Image.open('photo/law12.jpg')
-    st.image(image, width=800,caption='Figure 12 - Which Design law this image illustrate?')
-    image = Image.open('photo/law13.jpg')
-    st.image(image, width=800,caption='Figure 13 - Which Design law this image illustrate?')
-    image = Image.open('photo/law14.jpg')
-    st.image(image, width=800,caption='Figure 14 - Which Design law this image illustrate?')
-    image = Image.open('photo/law15.jpg')
-    st.image(image, width=800,caption='Figure 15 - Which Design law this image illustrate?')
-    image = Image.open('photo/law16.jpg')
-    st.image(image, width=800,caption='Figure 16 - Which Design law this image illustrate?')
+#    st.image(image, width=800,caption='Figure 4 - Which Design law this image illustrate?')
+#    image = Image.open('photo/law5.jpg')
+#    st.image(image, width=800,caption='Figure 5 - Which Design law this image illustrate?')
+#    image = Image.open('photo/law6.jpg')
+#    st.image(image, width=800,caption='Figure 6 - Which Design law this image illustrate?')
+#    image = Image.open('photo/law7.jpg')
+#    st.image(image, width=800,caption='Figure 7 - Which Design law this image illustrate?')
+#    image = Image.open('photo/law8.jpg')
+#    st.image(image, width=800,caption='Figure 8 - Which Design law this image illustrate?')
+#    image = Image.open('photo/law9.jpg')
+#    st.image(image, width=800,caption='Figure 9 - Which Design law this image illustrate?')
+#    image = Image.open('photo/law10.jpg')
+#    st.image(image, width=800,caption='Figure 10 - Which Design law this image illustrate?')
+#    image = Image.open('photo/law11.jpg')
+#    st.image(image, width=800,caption='Figure 11 - Which Design law this image illustrate?')
+#    image = Image.open('photo/law12.jpg')
+#    st.image(image, width=800,caption='Figure 12 - Which Design law this image illustrate?')
+#    image = Image.open('photo/law13.jpg')
+#    st.image(image, width=800,caption='Figure 13 - Which Design law this image illustrate?')
+#    image = Image.open('photo/law14.jpg')
+#    st.image(image, width=800,caption='Figure 14 - Which Design law this image illustrate?')
+#    image = Image.open('photo/law15.jpg')
+#    st.image(image, width=800,caption='Figure 15 - Which Design law this image illustrate?')
+#    image = Image.open('photo/law16.jpg')
+#    st.image(image, width=800,caption='Figure 16 - Which Design law this image illustrate?')
     
-with tab3:
-    st.title("🏢 Exercise space")
-    st.markdown ("""
-        Implement the following exercise with <a href="https://codepen.io/pen/"> Codepen</a>. You will be asked to share your code later.  
-        If you find it difficult, come back to the Theory space and ask the tutor for answer to the exercise with explanation.
-    """, unsafe_allow_html=True)
-    st.markdown("""
-        1. Open the website vnexpress.net. Evaluate the website and identify as many design laws as possible.  
-        2. Open the website https://nymag.com/ . Use the tool here https://wave.webaim.org/ to evaluate and identify accessibility errors of the web
-
-    """)
+#with tab3:
+#    st.title("🏢 Exercise space")
+#    st.markdown ("""
+#        Implement the following exercise with <a href="https://codepen.io/pen/"> Codepen</a>. You will be asked to share your code later.  
+#        If you find it difficult, come back to the Theory space and ask the tutor for answer to the exercise with explanation.
+#    """, unsafe_allow_html=True)
+#    st.markdown("""
+#        1. Open the website vnexpress.net. Evaluate the website and identify as many design laws as possible.  
+#        2. Open the website https://nymag.com/ . Use the tool here https://wave.webaim.org/ to evaluate and identify accessibility errors of the web
+#
+ #   """)
 
 
 
