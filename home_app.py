@@ -15,13 +15,16 @@ st.markdown(
     You can use this virtual assistant for:  
         + Ask for details, explanation and clarification of information of the projects
         + Support your ideation with ideas generations  
-        + Helping you with generation and refinement of user stories 
-        + Helping you with code generations  
-        + Helping you with developing test plan and test cases 
+        + Helping you with generation and refinement of user stories
+        + Helping you with code generations
+        + Helping you with developing test plan and test cases
         + Explain and illustrate for project management concepts you learn, i.e. Agile development, Work Breakdown Structure, Gantt Chart
         + Assist troubleshooting during the planing and execution of your projects
         + Improved the structure and quality of your report
-        + Motivate you with the   
+        + Motivate you with the working in the project
+
+
+        
     :red[When working with ChatGPT, be aware of following things. 
 First, ChatGPT 3.5 bases on data until 2021 so it not be up to date for some of your questions. 
 Second, halluciation can happen when generated text does not make sense as they are not a result of sensory experiences or perceptions. 
