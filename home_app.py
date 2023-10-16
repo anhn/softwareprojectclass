@@ -123,10 +123,10 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-tab1, tab2 = st.tabs(["Theory Space", "Exercise Space"])
+tab1, tab2 = st.tabs(["Project Space", "Course Space"])
 
 with tab1:
-    st.title("🏢 Theory space")
+    st.title("🏢 PRO1000GPT")
     st.markdown ("""
         Ask any thing about your project here.
     """, unsafe_allow_html=True)
