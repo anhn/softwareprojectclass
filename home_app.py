@@ -103,18 +103,18 @@ def get_response(jim_line):
     return output 
 
 with st.sidebar:
-    st.write("Lecture 9 - Introduction to Javascript")
-    st.write("Learning Objectives")
+    st.write("Guideline for PRO1000GPT")
+    st.write("Scope of use")
     st.markdown(""" 
-                    + History of JavaScript  
-                    + Variables, data types, operators, and expressions  
-                    + Define and call functions in JavaScript  
-                    + Control structures: If statements, loops, and switch statements  
-                    + Arrays: Creation, manipulation, and iteration of arrays  
-                    + Objects: object properties, and methods  
-                    + Document Object Model (DOM): Accessing and manipulating HTML elements  
-                    + jQuery: easier for DOM manipulation and event handling
-                    + Events: Responding to user actions with event listeners  
+                    + Ask for details, explanation and clarification of information of the project  
+                    + Support your ideation with ideas generations  
+                    + Help with generation and refinement of user stories  
+                    + Help with code generations  
+                    + Help with developing test plan and test cases  
+                    + Explain and illustrate for project management concepts you learn, i.e. Agile development, Work Breakdown Structure, Gantt Chart  
+                    + Assist troubleshooting during the planing and execution of your projects  
+                    + Improved the structure and quality of your report
+                    + Motivate you with the working in the project  
     """)    
 #    if st.button("Heading, paragraphs, newline and lists"):
 #            cathy_line = get_response("You are an online JavaScript course. Can you explain details the concepts and give code examples for each of them.")
@@ -128,7 +128,7 @@ tab1, tab2 = st.tabs(["Theory Space", "Exercise Space"])
 with tab1:
     st.title("🏢 Theory space")
     st.markdown ("""
-        Ask for explanation and examples by input a prompt.
+        Ask any thing about your project here.
     """, unsafe_allow_html=True)
     with st.form("my_form"):
         jim_line = st.text_area("Write you command here","", height=10, key='option')
@@ -222,20 +222,8 @@ with tab2:
 #```
 #    """)
 st.markdown(
-    """
-    This is a virtual setting for a AI-assited personalized learning in a software project management course. 
-    You can use this virtual assistant for:  
-        + Ask for details, explanation and clarification of information of the project
-        + Support your ideation with ideas generations
-        + Helping you with generation and refinement of user stories
-        + Helping you with code generations
-        + Helping you with developing test plan and test cases
-        + Explain and illustrate for project management concepts you learn, i.e. Agile development, Work Breakdown Structure, Gantt Chart
-        + Assist troubleshooting during the planing and execution of your projects
-        + Improved the structure and quality of your report
-        + Motivate you with the working in the project        
-   
-    :red[When working with ChatGPT, be aware of following things. First, ChatGPT 3.5 bases on data until 2021 so it not be up to date for some of your questions. 
+    """    
+:red[When working with ChatGPT, be aware of following things. First, ChatGPT 3.5 bases on data until 2021 so it not be up to date for some of your questions. 
 Second, halluciation can happen when generated text does not make sense as they are not a result of sensory experiences or perceptions. 
 Third, be aware of legal compliance and constraints when using generated content within USN context. You can not use text 100% generated in your project report. 
 Last but not least, ensure that your personal sensitive information, and or proprietary content is not shared or processed by Chatgpt, 
