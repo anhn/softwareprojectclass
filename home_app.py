@@ -136,7 +136,7 @@ with tab1:
                 st.session_state.generated.append(cathy_line)
     if st.session_state['generated']:  
         for i in range(len(st.session_state['generated'])-1, -1, -1):
-            st.markdown(""" :mailbox: :red[Tutor:] """ + st.session_state["generated"][i])
+            st.markdown(""" :mailbox: :red[PRO1000GPT:] """ + st.session_state["generated"][i])
             st.markdown(""" :mailbox: :blue[You:] """ + st.session_state['past'][i])
 
 with tab2:
